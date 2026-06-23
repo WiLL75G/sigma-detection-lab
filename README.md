@@ -17,11 +17,11 @@ Most detection rules get submitted straight from a blog post, untested. Everythi
 
 ## Contribution index
 
-| # | Contribution | Type | ATT&CK | Telemetry | Status | Upstream |
-|---|-------------|------|--------|-----------|--------|----------|
-| 1 | [Local user creation via ADSI/WinNT missed by rule](./6057-create-local-user-adsi-gap/) | Coverage gap | T1136.001 | Win 4104 | PR Open | [#6057](https://github.com/SigmaHQ/sigma/issues/6057) → [PR #6064](https://github.com/SigmaHQ/sigma/pull/6064) |
-| 2 | [PowerShell net-connection FP on legit Azure traffic](./6056-powershell-network-azure-fp/) | False positive | T1071.001 | Sysmon EID 3 | Reported | [#6056](https://github.com/SigmaHQ/sigma/issues/6056) |
-| 3 | _next contribution…_ | | | | | |
+| # | Contribution | Type | ATT&CK | Telemetry | Status | Evidence | Upstream |
+|---|-------------|------|--------|-----------|--------|----------|----------|
+| 1 | Local user creation via ADSI/WinNT missed by `posh_ps_create_local_user.yml` | Coverage gap | T1136.001 | Win 4104 | Reported · fix PR by community | [repo](https://github.com/WiLL75G/sigma-rule-validation-create-local-user) | [#6057](https://github.com/SigmaHQ/sigma/issues/6057) · [PR #6064](https://github.com/SigmaHQ/sigma/pull/6064) |
+| 2 | PowerShell net-connection FP on legitimate Azure traffic | False positive | T1071.001 | Sysmon EID 3 | Reported | [repo](https://github.com/WiLL75G/soc-sigma-powershell-network-connection) | [#6056](https://github.com/SigmaHQ/sigma/issues/6056) |
+| 3 | _next contribution…_ | | | | | | |
 
 **Status legend:** `Draft` · `Tested` (validated in lab) · `Reported` (issue filed) · `PR Open` · `Merged` · `Needs revision`
 
